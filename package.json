@@ -1,0 +1,24 @@
+{
+  "name": "hoteliaapi",
+  "version": "1.0.0",
+  "description": "Proyecto api hotelia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KSRL05/HoteliaApi.git"
+  },
+  "author": "Kevin Rivera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KSRL05/HoteliaApi/issues"
+  },
+  "homepage": "https://github.com/KSRL05/HoteliaApi#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
