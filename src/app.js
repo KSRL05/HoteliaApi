@@ -12,4 +12,4 @@ conexionBD();
 
 app.set("name", "Hotelia-Api");
 app.set("port", process.env.PORT || 3000);
-app.set("host", process.env.HOST || 'localhost');
+app.set("host", process.env.HOST || 'lcalhost');
