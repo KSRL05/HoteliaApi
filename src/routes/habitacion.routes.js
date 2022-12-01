@@ -2,6 +2,7 @@ const { Router } = require("express");
 const rutasHabitacion = Router();
 const ctrHab = require("../controller/habitacion.controller");
 const multer = require("multer");
+const fecha = Date.now();
 
 const rutaStorage = multer.diskStorage({
     destination: function (req, file, callback)
@@ -21,7 +22,7 @@ const upload = multer({
 rutasHabitacion.get('/', ctrHab.obtener);
 rutasHabitacion.get('/:id', ctrHab.obtenerId);
 rutasHabitacion.post('/',upload.single('img'),ctrHab.add);
-//rutasHabitacion.put('/:id', ctrHab.edit);
+rutasHabitacion.put('/:id', ctrHab.edit);
 
 
 module.exports = rutasHabitacion;
